@@ -1,0 +1,36 @@
+<div class="container">
+  <div *ngFor="let post of posts" class="card">
+    <div class="image">
+      <img [src]="post.image" />
+    </div>
+    <div class="details">
+      <div class="center">
+        <h1>
+          {{ post.user.first_name }} <br /><span>{{
+            post.user.last_name
+          }}</span>
+        </h1>
+        <p>
+          {{ post.message }}
+        </p>
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

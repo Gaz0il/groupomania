@@ -1,0 +1,109 @@
+0 verbose cli [
+0 verbose cli   'C:\\Dev\\node\\node.exe',
+0 verbose cli   'C:\\Users\\heris\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+0 verbose cli   'install',
+0 verbose cli   '-g',
+0 verbose cli   'npm@7.15.1'
+0 verbose cli ]
+1 info using npm@7.15.0
+2 info using node@v14.17.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:C:\Users\heris\AppData\Roaming\npm\node_modules\npm\npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\Dev\OC\groupomania\groupomania\frontend\groupomania\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:C:\Users\heris\.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:C:\Users\heris\AppData\Roaming\npm\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 0ms
+18 timing config:load Completed in 10ms
+19 timing npm:load:configload Completed in 10ms
+20 timing npm:load:setTitle Completed in 1ms
+21 timing npm:load:setupLog Completed in 1ms
+22 timing npm:load:cleanupLog Completed in 2ms
+23 timing npm:load:configScope Completed in 1ms
+24 timing npm:load:projectScope Completed in 0ms
+25 timing npm:load Completed in 18ms
+26 timing config:load:flatten Completed in 5ms
+27 timing arborist:ctor Completed in 1ms
+28 timing idealTree:init Completed in 14ms
+29 timing idealTree:userRequests Completed in 6ms
+30 silly idealTree buildDeps
+31 silly fetch manifest npm@7.15.1
+32 http fetch GET 200 https://registry.npmjs.org/npm 18ms (from cache)
+33 silly placeDep ROOT npm@7.15.1 OK for:  want: 7.15.1
+34 timing idealTree:#root Completed in 50ms
+35 timing idealTree:node_modules/npm Completed in 0ms
+36 timing idealTree:buildDeps Completed in 62ms
+37 timing idealTree:fixDepFlags Completed in 1ms
+38 timing idealTree Completed in 86ms
+39 timing reify:loadTrees Completed in 288ms
+40 timing reify:diffTrees Completed in 6ms
+41 silly reify mark retired [
+41 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\node_modules\\npm',
+41 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npm',
+41 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npm.cmd',
+41 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npm.ps1',
+41 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npx',
+41 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npx.cmd',
+41 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npx.ps1'
+41 silly reify ]
+42 silly reify moves {
+42 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\node_modules\\npm': 'C:\\Users\\heris\\AppData\\Roaming\\npm\\node_modules\\.npm-q8qE1p72',
+42 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npm': 'C:\\Users\\heris\\AppData\\Roaming\\npm\\.npm-6Bf92xVa',
+42 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npm.cmd': 'C:\\Users\\heris\\AppData\\Roaming\\npm\\.npm.cmd-tDdycuJz',
+42 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npm.ps1': 'C:\\Users\\heris\\AppData\\Roaming\\npm\\.npm.ps1-pTGFzGbU',
+42 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npx': 'C:\\Users\\heris\\AppData\\Roaming\\npm\\.npx-s5UiXGUO',
+42 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npx.cmd': 'C:\\Users\\heris\\AppData\\Roaming\\npm\\.npx.cmd-mGQfUNj3',
+42 silly reify   'C:\\Users\\heris\\AppData\\Roaming\\npm\\npx.ps1': 'C:\\Users\\heris\\AppData\\Roaming\\npm\\.npx.ps1-jADUK7uj'
+42 silly reify }
+43 timing reify:retireShallow Completed in 7ms
+44 timing reify:createSparse Completed in 0ms
+45 silly tarball no local data for npm@https://registry.npmjs.org/npm/-/npm-7.15.1.tgz. Extracting by manifest.
+46 timing reify:rollback:createSparse Completed in 3ms
+47 timing reify:rollback:retireShallow Completed in 9ms
+48 timing command:install Completed in 334ms
+49 verbose stack Error: Cannot find module 'agentkeepalive'
+49 verbose stack Require stack:
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\agent.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\index.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-fetch\index.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\remote.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\git.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\fetcher.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\index.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\lib\utils\update-notifier.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\lib\cli.js
+49 verbose stack - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+49 verbose stack     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:885:15)
+49 verbose stack     at Function.Module._load (internal/modules/cjs/loader.js:730:27)
+49 verbose stack     at Module.require (internal/modules/cjs/loader.js:957:19)
+49 verbose stack     at require (internal/modules/cjs/helpers.js:88:18)
+49 verbose stack     at getAgent (C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\agent.js:70:17)
+49 verbose stack     at remoteFetch (C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\index.js:267:17)
+49 verbose stack     at C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\index.js:139:14
+50 verbose cwd C:\Dev\OC\groupomania\groupomania\frontend\groupomania
+51 verbose Windows_NT 10.0.19042
+52 verbose argv "C:\\Dev\\node\\node.exe" "C:\\Users\\heris\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "npm@7.15.1"
+53 verbose node v14.17.0
+54 verbose npm  v7.15.0
+55 error code MODULE_NOT_FOUND
+56 error Cannot find module 'agentkeepalive'
+56 error Require stack:
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\agent.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\make-fetch-happen\index.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-fetch\index.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\remote.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\git.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\fetcher.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\node_modules\pacote\lib\index.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\lib\utils\update-notifier.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\lib\cli.js
+56 error - C:\Users\heris\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+57 verbose exit 1
